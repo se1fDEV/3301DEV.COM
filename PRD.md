@@ -7,8 +7,8 @@
 | **Product Name** | 3301dev.com                                                  |
 | **Author**       |                                                              |
 | **Date**         | 2026-03-21                                                   |
-| **Version**      | 1.0                                                          |
-| **Status**       | Draft                                                        |
+| **Version**      | 1.1                                                          |
+| **Status**       | Implemented                                                  |
 | **Description**  | Commercial website that helps small and medium-sized businesses (SMBs) find IT specialists, software developers, DevOps specialists, and support agents to solve various technical issues. |
 
 ## 2. Problem Statement
@@ -71,14 +71,14 @@ Small and medium-sized businesses often lack in-house IT expertise and struggle 
 
 | ID   | Requirement                  | Description                                                                 | Priority | Status      |
 | ---- | ---------------------------- | --------------------------------------------------------------------------- | -------- | ----------- |
-| FR-1 | Products page                | Display all service categories (IT, Dev, DevOps, Support) with descriptions | Must     | Not Started |
-| FR-2 | Plans & Pricing page         | Show three subscription tiers with features and pricing                     | Must     | Not Started |
-| FR-3 | Support page                 | Provide contact form and FAQ section                                        | Must     | Not Started |
-| FR-4 | Try Free page                | Free-trial sign-up form with CTA                                           | Must     | Not Started |
-| FR-5 | AI Agent chat widget         | Embedded chat on Support page for work-scope estimation                     | Should   | Not Started |
-| FR-6 | Responsive layout            | Pages must render correctly on desktop and mobile                           | Must     | Not Started |
-| FR-7 | Consistent navigation        | Shared header/footer nav across all 4 pages                                | Must     | Not Started |
-| FR-8 | Language switcher (EN/UA)    | User can toggle between English and Ukrainian via a header control. All visible text is translated. Language preference is saved to localStorage. | Must     | Not Started |
+| FR-1 | Products page                | Display all service categories (IT, Dev, DevOps, Support) with descriptions | Must     | Done        |
+| FR-2 | Plans & Pricing page         | Show three subscription tiers with features and pricing                     | Must     | Done        |
+| FR-3 | Support page                 | Provide contact form and FAQ section                                        | Must     | Done        |
+| FR-4 | Try Free page                | Free-trial sign-up form with CTA                                           | Must     | Done        |
+| FR-5 | AI Agent chat widget         | Embedded chat on Support page for work-scope estimation                     | Should   | Done        |
+| FR-6 | Responsive layout            | Pages must render correctly on desktop and mobile                           | Must     | Done        |
+| FR-7 | Consistent navigation        | Shared header/footer nav across all 4 pages                                | Must     | Done        |
+| FR-8 | Language switcher (EN/UA)    | User can toggle between English and Ukrainian via a header control. All visible text is translated. Language preference is saved to localStorage. | Must     | Done        |
 
 ## 10. Non-Functional Requirements
 
@@ -92,34 +92,51 @@ Small and medium-sized businesses often lack in-house IT expertise and struggle 
 
 ## 11. Design & UX
 
-### Color Palette
+### Color Palette (Dark Theme)
 
-| Role       | Color   | Hex (suggested) |
-| ---------- | ------- | --------------- |
-| Primary    | Green   | #2E7D32         |
-| Background | White   | #FFFFFF         |
-| Text       | Black   | #1A1A1A         |
-| Accent     | Green   | #43A047         |
+| Role            | Color       | Hex             |
+| --------------- | ----------- | --------------- |
+| Primary         | Green       | #43A047         |
+| Primary Dark    | Dark Green  | #2E7D32         |
+| Accent          | Light Green | #66BB6A         |
+| Background      | Dark        | #121212         |
+| Surface         | Dark Grey   | #1E1E1E         |
+| Text            | Light Grey  | #E8E8E8         |
+| Text Secondary  | Grey        | #A0A0A0         |
+| Border          | Dark Grey   | #333333         |
 
 ### Tech Stack
 
 - **HTML5** — semantic markup
-- **CSS3** — custom styles, CSS variables for theming
+- **CSS3** — custom styles, CSS variables for theming (dark theme)
+- **Vanilla JavaScript** — i18n engine, form validation, billing toggle, AI chat widget
 - **No frameworks** — no Bootstrap, Tailwind, React, etc.
 
 ### Layout Guidelines
 
-- Clean, professional design targeting business users
-- Green CTA buttons on white backgrounds
-- Black text for readability
+- Clean, professional dark-themed design targeting business users
+- Green CTA buttons on dark backgrounds for high contrast
+- Light text (#E8E8E8) on dark backgrounds for readability
 - Consistent spacing and typography across all 4 pages
+- Sticky header with main navigation
+- Responsive grid layout with mobile hamburger menu
 
 ## 12. Technical Considerations
 
-- Pure HTML/CSS — no JavaScript frameworks; vanilla JS only where necessary (e.g., AI agent chat widget)
+- Pure HTML/CSS with vanilla JavaScript — no frameworks
+- `js/i18n.js` — complete EN/UA translation engine with localStorage persistence and public `window.i18n` API
+- Inline scripts handle form validation, billing toggle, AI chat (simulated responses), and mobile nav
 - Static site can be hosted on any CDN or static hosting provider
-- AI agent integration will require a lightweight JS embed or iframe for the chat widget on the Support page
-- Forms on Support and Try Free pages will need a backend endpoint or third-party form service
+- AI agent chat currently uses client-side pattern matching (demo); production will require a backend or third-party AI service
+- Forms on Support and Try Free pages perform client-side validation; backend endpoint or third-party form service needed for submission
+- Chat widget sanitizes user input (HTML escaping) to prevent XSS
+
+### Testing
+
+- **Framework:** Jest + jsdom
+- **Test count:** 240 tests across 6 suites
+- **Run:** `npm test`
+- **Suites:** HTML structure, navigation & links, i18n translations, interactive features (forms, billing toggle, AI chat, nav toggle), accessibility & SEO, CSS styles
 
 ## 13. Success Metrics
 
@@ -148,6 +165,8 @@ Small and medium-sized businesses often lack in-house IT expertise and struggle 
 | ------------------------------------------- | ------ | ---------- | ----------------------------------------------- |
 | AI agent chat adds JS complexity             | Medium | Medium     | Keep widget isolated; lazy-load script           |
 | Limited styling options without frameworks   | Low    | Low        | Use CSS custom properties and modern CSS layouts |
+| AI chat is demo-only (simulated responses)   | Medium | High       | Plan backend integration for production          |
+| Forms lack backend submission endpoint       | Medium | High       | Integrate third-party form service or API        |
 | Low initial traffic                          | High   | Medium     | SEO optimization, content marketing, paid ads    |
 
 ## 16. Out of Scope
