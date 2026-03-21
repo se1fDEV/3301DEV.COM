@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="3301dev.com — Get help from our team or chat with an AI agent for work-scope estimation.">
+  <title>Support — 3301dev.com</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">3301<span>dev</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.products">Products</a></li>
+          <li><a href="pricing.html" data-i18n="nav.pricing">Plans &amp; Pricing</a></li>
+          <li><a href="support.html" class="active" data-i18n="nav.support">Support</a></li>
+          <li class="lang-switcher"><button class="lang-btn active" data-lang="en">EN</button><button class="lang-btn" data-lang="ua">UA</button></li>
+          <li><a href="try-free.html" class="btn-nav" data-i18n="nav.tryfree">Try Free</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 data-i18n="support.hero.title">How Can We <span class="highlight">Help?</span></h1>
+      <p data-i18n="support.hero.subtitle">Reach out to our team or chat with our AI agent to estimate additional work and get instant answers.</p>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="section section-alt">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title" data-i18n="support.contacts.title">Contacts</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:center;margin-top:24px;">
+        <a href="mailto:alex@se1f.dev" style="display:inline-flex;align-items:center;gap:8px;font-size:1.1rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+          alex@se1f.dev
+        </a>
+        <a href="mailto:alex@3301dev.com" style="display:inline-flex;align-items:center;gap:8px;font-size:1.1rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+          alex@3301dev.com
+        </a>
+        <a href="https://t.me/a3301dev_com" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;font-size:1.1rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.2 4.4L2.4 10.8c-.6.2-.6 1.1 0 1.3l4.5 1.7 1.7 5.5c.1.4.6.6.9.3l2.5-2.1 4.4 3.3c.4.3 1 .1 1.1-.4L21.8 5.2c.2-.6-.3-1-.6-.8z"/><path d="M8.6 13.8l8.4-6.2"/></svg>
+          t.me/a3301dev_com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support Grid: Form + FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="support-grid">
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3 data-i18n="support.form.title">Send Us a Message</h3>
+          <form id="supportForm" novalidate>
+            <div class="form-group">
+              <label for="name" data-i18n="support.form.name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" data-i18n-ph="support.form.name.ph" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="support.form.email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" data-i18n-ph="support.form.email.ph" required>
+            </div>
+            <div class="form-group">
+              <label for="category" data-i18n="support.form.category">Category</label>
+              <select id="category" name="category">
+                <option value="" data-i18n="support.form.cat.default">Select a topic…</option>
+                <option value="billing" data-i18n="support.form.cat.billing">Billing &amp; Plans</option>
+                <option value="technical" data-i18n="support.form.cat.technical">Technical Issue</option>
+                <option value="onboarding" data-i18n="support.form.cat.onboarding">Onboarding Help</option>
+                <option value="scope" data-i18n="support.form.cat.scope">Work-Scope Estimation</option>
+                <option value="other" data-i18n="support.form.cat.other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="support.form.message">Message</label>
+              <textarea id="message" name="message" placeholder="Describe your question or issue…" data-i18n-ph="support.form.message.ph" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="support.form.submit">Send Message</button>
+            <p id="formSuccess" class="form-message" style="display:none;color:var(--color-primary);margin-top:12px;font-weight:600;" data-i18n="support.form.success">Thanks! We'll get back to you within 24 hours.</p>
+            <p id="formError" class="form-message" style="display:none;color:#d32f2f;margin-top:12px;font-weight:600;"></p>
+          </form>
+        </div>
+
+        <!-- FAQ -->
+        <div>
+          <h3 style="font-size:1.3rem;margin-bottom:24px;" data-i18n="support.faq.title">Frequently Asked Questions</h3>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <h4 data-i18n="support.faq.q1">What's included in the free trial?</h4>
+              <p data-i18n="support.faq.a1">You get 14 days of full access to the Basic plan — no credit card required. Upgrade anytime during or after the trial.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4 data-i18n="support.faq.q2">Can I switch plans later?</h4>
+              <p data-i18n="support.faq.a2">Absolutely. You can upgrade or downgrade your subscription at any time from your account settings.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4 data-i18n="support.faq.q3">What if I need services beyond my plan?</h4>
+              <p data-i18n="support.faq.a3">Use our AI agent chat below to describe your needs — it will estimate the scope and suggest a tailored quote.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4 data-i18n="support.faq.q4">How fast is the response time?</h4>
+              <p data-i18n="support.faq.a4">Basic: within 48 hours. Professional: within 24 hours. Premium: under 4 hours, with on-call emergency support.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4 data-i18n="support.faq.q5">Who will handle my request?</h4>
+              <p data-i18n="support.faq.a5">Depending on your plan, requests are handled by human agents (developers, DevOps, IT specialists) or AI agents for initial triage and estimation.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Agent Chat -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-i18n="support.chat.title">AI Agent Chat</h2>
+      <p class="section-subtitle" data-i18n="support.chat.subtitle">Describe your project or issue and our AI agent will estimate the scope of work.</p>
+
+      <div class="chat-container" id="chatContainer">
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-bubble bot">
+            <strong data-i18n="support.chat.agent">AI Agent</strong>
+            <p data-i18n="support.chat.greeting">Hi! I'm the 3301dev AI assistant. Describe what you need and I'll estimate the scope of work for you.</p>
+          </div>
+        </div>
+        <form class="chat-input" id="chatForm">
+          <input type="text" id="chatInput" placeholder="e.g. I need a CI/CD pipeline for a Node.js app…" data-i18n-ph="support.chat.placeholder" autocomplete="off" required>
+          <button type="submit" class="btn btn-primary" data-i18n="support.chat.send">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">3301<span>dev</span></a>
+          <p data-i18n="footer.brand">Helping small and medium businesses find the right IT talent — fast, affordable, and reliable.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.pages">Pages</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.products">Products</a></li>
+            <li><a href="pricing.html" data-i18n="nav.pricing">Plans &amp; Pricing</a></li>
+            <li><a href="support.html" data-i18n="nav.support">Support</a></li>
+            <li><a href="try-free.html" data-i18n="nav.tryfree">Try Free</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.services">Services</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="footer.it">IT Specialists</a></li>
+            <li><a href="index.html" data-i18n="footer.dev">Developers</a></li>
+            <li><a href="index.html" data-i18n="footer.devops">DevOps</a></li>
+            <li><a href="index.html" data-i18n="footer.support">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul>
+            <li><a href="support.html" data-i18n="footer.gethelp">Get Help</a></li>
+            <li><a href="support.html" data-i18n="footer.aichat">AI Agent Chat</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">&copy; 2026 3301dev.com. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script>
+    // Mobile nav toggle
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+
+    // Contact form validation
+    (function () {
+      var form = document.getElementById('supportForm');
+      var successMsg = document.getElementById('formSuccess');
+      var errorMsg = document.getElementById('formError');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
+
+        var name = form.name.value.trim();
+        var email = form.email.value.trim();
+        var message = form.message.value.trim();
+
+        if (!name || !email || !message) {
+          errorMsg.textContent = window.i18n.t('support.form.error.required');
+          errorMsg.style.display = 'block';
+          return;
+        }
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          errorMsg.textContent = window.i18n.t('support.form.error.email');
+          errorMsg.style.display = 'block';
+          return;
+        }
+
+        successMsg.style.display = 'block';
+        form.reset();
+      });
+    })();
+
+    // AI Chat (demo — simulated responses)
+    (function () {
+      var chatForm = document.getElementById('chatForm');
+      var chatInput = document.getElementById('chatInput');
+      var chatMessages = document.getElementById('chatMessages');
+
+      var responses = [
+        function (msg) {
+          if (/ci\s*\/?\s*cd|pipeline|deploy/i.test(msg)) {
+            return 'Based on your description, a CI/CD pipeline setup typically falls under our <strong>Professional plan ($100/mo)</strong>. Estimated scope: 8–16 hours of DevOps work. Want me to connect you with a specialist?';
+          }
+          if (/website|web\s*app|frontend|landing/i.test(msg)) {
+            return 'A custom website or web app project usually takes 20–60 hours depending on complexity. Our <strong>Professional</strong> or <strong>Premium</strong> plan would be a great fit. Shall I prepare a detailed estimate?';
+          }
+          if (/security|audit|penetration|vulnerability/i.test(msg)) {
+            return 'Security audits and vulnerability assessments are covered under our <strong>Premium plan ($250/mo)</strong>. Estimated scope: 12–30 hours with our IT specialists. Would you like to start a trial?';
+          }
+          if (/api|integration|backend/i.test(msg)) {
+            return 'API development and system integrations typically require 15–40 hours of development work. Our <strong>Professional plan</strong> includes dedicated developers for this. Want to discuss specifics?';
+          }
+          if (/support|help\s*desk|tickets/i.test(msg)) {
+            return 'For ongoing support and help-desk services, our <strong>Basic plan ($25/mo)</strong> covers up to 5 tickets/month. Need more? Professional offers 20, and Premium is unlimited.';
+          }
+          return 'Thanks for sharing! Based on what you\'ve described, I\'d recommend starting with our <strong>Professional plan ($100/mo)</strong> for access to developers and DevOps specialists. You can <a href="try-free.html">start a free trial</a> to evaluate the fit. Want more details on any specific service?';
+        }
+      ];
+
+      function addBubble(text, sender) {
+        var bubble = document.createElement('div');
+        bubble.className = 'chat-bubble ' + sender;
+        var label = sender === 'bot' ? window.i18n.t('support.chat.agent') : window.i18n.t('support.chat.you');
+        bubble.innerHTML = '<strong>' + label + '</strong><p>' + text + '</p>';
+        chatMessages.appendChild(bubble);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      chatForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var msg = chatInput.value.trim();
+        if (!msg) return;
+
+        var safeMsg = msg.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        addBubble(safeMsg, 'user');
+        chatInput.value = '';
+
+        setTimeout(function () {
+          var reply = responses[0](msg);
+          addBubble(reply, 'bot');
+        }, 800);
+      });
+    })();
+  </script>
+
+</body>
+</html>

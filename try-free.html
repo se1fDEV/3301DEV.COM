@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="3301dev.com — Start your free 14-day trial. No credit card required.">
+  <title>Try Free — 3301dev.com</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">3301<span>dev</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.products">Products</a></li>
+          <li><a href="pricing.html" data-i18n="nav.pricing">Plans &amp; Pricing</a></li>
+          <li><a href="support.html" data-i18n="nav.support">Support</a></li>
+          <li class="lang-switcher"><button class="lang-btn active" data-lang="en">EN</button><button class="lang-btn" data-lang="ua">UA</button></li>
+          <li><a href="try-free.html" class="btn-nav active" data-i18n="nav.tryfree">Try Free</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Trial Hero + Form -->
+  <section class="trial-hero">
+    <div class="container">
+      <h1 data-i18n="trial.hero.title">Start Your <span class="highlight">Free Trial</span></h1>
+      <p data-i18n="trial.hero.subtitle">14 days of full access — no credit card required. Experience how 3301dev can power your business.</p>
+
+      <div class="trial-form">
+        <h3 data-i18n="trial.form.title">Create Your Account</h3>
+        <form id="trialForm" novalidate>
+          <div class="form-group">
+            <label for="fullName" data-i18n="trial.form.name">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Jane Smith" data-i18n-ph="trial.form.name.ph" required>
+          </div>
+          <div class="form-group">
+            <label for="workEmail" data-i18n="trial.form.email">Work Email</label>
+            <input type="email" id="workEmail" name="workEmail" placeholder="jane@company.com" data-i18n-ph="trial.form.email.ph" required>
+          </div>
+          <div class="form-group">
+            <label for="company" data-i18n="trial.form.company">Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Acme Inc." data-i18n-ph="trial.form.company.ph">
+          </div>
+          <div class="form-group">
+            <label for="teamSize" data-i18n="trial.form.teamsize">Team Size</label>
+            <select id="teamSize" name="teamSize">
+              <option value="" data-i18n="trial.form.ts.default">Select…</option>
+              <option value="1-5" data-i18n="trial.form.ts.1">1 – 5 people</option>
+              <option value="6-20" data-i18n="trial.form.ts.2">6 – 20 people</option>
+              <option value="21-50" data-i18n="trial.form.ts.3">21 – 50 people</option>
+              <option value="51+" data-i18n="trial.form.ts.4">51+ people</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="trial.form.submit">Start Free Trial</button>
+          <p id="trialSuccess" style="display:none;color:var(--color-primary);text-align:center;margin-top:16px;font-weight:600;" data-i18n="trial.form.success">You're in! Check your email to get started.</p>
+          <p id="trialError" style="display:none;color:#d32f2f;text-align:center;margin-top:16px;font-weight:600;"></p>
+        </form>
+        <p style="text-align:center;font-size:0.85rem;color:var(--color-text-light);margin-top:16px;" data-i18n="trial.form.note">No credit card required. Cancel anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="trial.benefits.title">What You Get</h2>
+      <p class="section-subtitle" data-i18n="trial.benefits.subtitle">Everything you need to evaluate 3301dev for your business.</p>
+      <div class="trial-benefits">
+
+        <div class="trial-benefit">
+          <div class="icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h4 data-i18n="trial.b1.title">Instant Access</h4>
+          <p data-i18n="trial.b1.desc">Start using the platform immediately — no setup, no waiting.</p>
+        </div>
+
+        <div class="trial-benefit">
+          <div class="icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h4 data-i18n="trial.b2.title">Human &amp; AI Agents</h4>
+          <p data-i18n="trial.b2.desc">Experience both our human specialists and AI-powered assistants.</p>
+        </div>
+
+        <div class="trial-benefit">
+          <div class="icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+          <h4 data-i18n="trial.b3.title">Full Plan Features</h4>
+          <p data-i18n="trial.b3.desc">Try everything in the Basic plan for 14 days — upgrade anytime.</p>
+        </div>
+
+        <div class="trial-benefit">
+          <div class="icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h4 data-i18n="trial.b4.title">AI Scope Estimation</h4>
+          <p data-i18n="trial.b4.desc">Chat with our AI agent to get instant work-scope estimates.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial / Social Proof -->
+  <section class="section section-alt">
+    <div class="container" style="text-align:center;max-width:680px;">
+      <h2 class="section-title" data-i18n="trial.social.title">Trusted by Growing Businesses</h2>
+      <blockquote style="font-size:1.15rem;font-style:italic;color:var(--color-text-light);margin:32px 0 16px;line-height:1.7;" data-i18n="trial.social.quote">
+        "3301dev connected us with a DevOps engineer who set up our CI/CD pipeline in a week. We couldn't have done it without them."
+      </blockquote>
+      <p style="font-weight:600;" data-i18n="trial.social.author">— Alex R., CTO at Streamline Labs</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">3301<span>dev</span></a>
+          <p data-i18n="footer.brand">Helping small and medium businesses find the right IT talent — fast, affordable, and reliable.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.pages">Pages</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.products">Products</a></li>
+            <li><a href="pricing.html" data-i18n="nav.pricing">Plans &amp; Pricing</a></li>
+            <li><a href="support.html" data-i18n="nav.support">Support</a></li>
+            <li><a href="try-free.html" data-i18n="nav.tryfree">Try Free</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.services">Services</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="footer.it">IT Specialists</a></li>
+            <li><a href="index.html" data-i18n="footer.dev">Developers</a></li>
+            <li><a href="index.html" data-i18n="footer.devops">DevOps</a></li>
+            <li><a href="index.html" data-i18n="footer.support">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul>
+            <li><a href="support.html" data-i18n="footer.gethelp">Get Help</a></li>
+            <li><a href="support.html" data-i18n="footer.aichat">AI Agent Chat</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">&copy; 2026 3301dev.com. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script>
+    // Mobile nav toggle
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+
+    // Trial form validation
+    (function () {
+      var form = document.getElementById('trialForm');
+      var successMsg = document.getElementById('trialSuccess');
+      var errorMsg = document.getElementById('trialError');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
+
+        var name = form.fullName.value.trim();
+        var email = form.workEmail.value.trim();
+
+        if (!name || !email) {
+          errorMsg.textContent = window.i18n.t('trial.form.error.required');
+          errorMsg.style.display = 'block';
+          return;
+        }
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          errorMsg.textContent = window.i18n.t('trial.form.error.email');
+          errorMsg.style.display = 'block';
+          return;
+        }
+
+        successMsg.style.display = 'block';
+        form.reset();
+      });
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="3301dev.com — Transparent subscription plans for IT specialists, developers, DevOps, and support.">
+  <title>Plans &amp; Pricing — 3301dev.com</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">3301<span>dev</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.products">Products</a></li>
+          <li><a href="pricing.html" class="active" data-i18n="nav.pricing">Plans &amp; Pricing</a></li>
+          <li><a href="support.html" data-i18n="nav.support">Support</a></li>
+          <li class="lang-switcher"><button class="lang-btn active" data-lang="en">EN</button><button class="lang-btn" data-lang="ua">UA</button></li>
+          <li><a href="try-free.html" class="btn-nav" data-i18n="nav.tryfree">Try Free</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 data-i18n="pricing.hero.title">Simple, Transparent <span class="highlight">Pricing</span></h1>
+      <p data-i18n="pricing.hero.subtitle">Choose the plan that fits your business. Upgrade, downgrade, or cancel anytime.</p>
+
+      <!-- Billing toggle -->
+      <div class="billing-toggle" id="billingToggle">
+        <span class="toggle-label active" data-period="monthly" data-i18n="pricing.toggle.monthly">Monthly</span>
+        <button class="toggle-switch" id="toggleSwitch" aria-label="Toggle billing period">
+          <span class="toggle-knob"></span>
+        </button>
+        <span class="toggle-label" data-period="annual"><span data-i18n="pricing.toggle.annual">Annual</span> <small class="save-badge" data-i18n="pricing.toggle.save">Save 20%</small></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section class="section">
+    <div class="container">
+      <div class="pricing-cards">
+
+        <!-- Basic -->
+        <div class="pricing-card">
+          <h3 data-i18n="pricing.basic.title">Basic</h3>
+          <p data-i18n="pricing.basic.desc">Great for small teams getting started.</p>
+          <div class="pricing-price" data-monthly="25" data-annual="20">$25<span>/mo</span></div>
+          <p class="pricing-period monthly-label" data-i18n="pricing.basic.billed.monthly">Billed monthly</p>
+          <p class="pricing-period annual-label" style="display:none;" data-i18n="pricing.basic.billed.annual">Billed annually</p>
+          <ul class="pricing-features">
+            <li data-i18n="pricing.basic.f1">Access to support agents</li>
+            <li data-i18n="pricing.basic.f2">Basic issue resolution</li>
+            <li data-i18n="pricing.basic.f3">Email support</li>
+            <li data-i18n="pricing.basic.f4">Up to 5 tickets/month</li>
+            <li data-i18n="pricing.basic.f5">Response within 48 hours</li>
+          </ul>
+          <a href="try-free.html" class="btn btn-outline" style="width:100%;" data-i18n="pricing.cta.trial">Start Free Trial</a>
+        </div>
+
+        <!-- Professional -->
+        <div class="pricing-card featured">
+          <span class="pricing-badge" data-i18n="pricing.pro.badge">Most Popular</span>
+          <h3 data-i18n="pricing.pro.title">Professional</h3>
+          <p data-i18n="pricing.pro.desc">For growing businesses that need dedicated talent.</p>
+          <div class="pricing-price" data-monthly="100" data-annual="80">$100<span>/mo</span></div>
+          <p class="pricing-period monthly-label" data-i18n="pricing.pro.billed.monthly">Billed monthly</p>
+          <p class="pricing-period annual-label" style="display:none;" data-i18n="pricing.pro.billed.annual">Billed annually</p>
+          <ul class="pricing-features">
+            <li data-i18n="pricing.pro.f1">Everything in Basic</li>
+            <li data-i18n="pricing.pro.f2">Dedicated software developers</li>
+            <li data-i18n="pricing.pro.f3">DevOps specialists</li>
+            <li data-i18n="pricing.pro.f4">Up to 20 tickets/month</li>
+            <li data-i18n="pricing.pro.f5">Response within 24 hours</li>
+            <li data-i18n="pricing.pro.f6">Telegram/Viber integration</li>
+          </ul>
+          <a href="try-free.html" class="btn btn-primary" style="width:100%;" data-i18n="pricing.cta.trial">Start Free Trial</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="pricing-card">
+          <h3 data-i18n="pricing.premium.title">Premium</h3>
+          <p data-i18n="pricing.premium.desc">Full access with priority support and AI consultations.</p>
+          <div class="pricing-price" data-monthly="250" data-annual="200">$250<span>/mo</span></div>
+          <p class="pricing-period monthly-label" data-i18n="pricing.premium.billed.monthly">Billed monthly</p>
+          <p class="pricing-period annual-label" style="display:none;" data-i18n="pricing.premium.billed.annual">Billed annually</p>
+          <ul class="pricing-features">
+            <li data-i18n="pricing.premium.f1">Everything in Professional</li>
+            <li data-i18n="pricing.premium.f2">Priority response (under 4 hours)</li>
+            <li data-i18n="pricing.premium.f3">AI agent consultations</li>
+            <li data-i18n="pricing.premium.f4">Custom work-scope estimation</li>
+            <li data-i18n="pricing.premium.f5">Unlimited tickets</li>
+            <li data-i18n="pricing.premium.f6">Dedicated account manager</li>
+            <li data-i18n="pricing.premium.f7">On-call emergency support</li>
+          </ul>
+          <a href="try-free.html" class="btn btn-outline" style="width:100%;" data-i18n="pricing.cta.trial">Start Free Trial</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Agent CTA -->
+  <section class="ai-cta">
+    <div class="container">
+      <h2 data-i18n="pricing.custom.title">Need Something Custom?</h2>
+      <p data-i18n="pricing.custom.desc">Talk to our AI agent to estimate the scope of additional work and get a personalised quote.</p>
+      <a href="support.html" class="btn" data-i18n="pricing.custom.btn">Talk to AI Agent</a>
+    </div>
+  </section>
+
+  <!-- Compare Plans -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-i18n="pricing.compare.title">Compare Plans</h2>
+      <p class="section-subtitle" data-i18n="pricing.compare.subtitle">See exactly what's included in each tier.</p>
+      <div class="compare-table-wrapper">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th data-i18n="compare.feature">Feature</th>
+              <th data-i18n="compare.basic">Basic</th>
+              <th data-i18n="compare.pro">Professional</th>
+              <th data-i18n="compare.premium">Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td data-i18n="compare.support_agents">Support Agents</td><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><td data-i18n="compare.software_devs">Software Developers</td><td>—</td><td>✓</td><td>✓</td></tr>
+            <tr><td data-i18n="compare.devops">DevOps Specialists</td><td>—</td><td>✓</td><td>✓</td></tr>
+            <tr><td data-i18n="compare.it">IT Specialists</td><td>—</td><td>—</td><td>✓</td></tr>
+            <tr><td data-i18n="compare.ai">AI Agent Consultations</td><td>—</td><td>—</td><td>✓</td></tr>
+            <tr><td data-i18n="compare.tickets">Monthly Tickets</td><td>5</td><td>20</td><td data-i18n="compare.tickets.unlimited">Unlimited</td></tr>
+            <tr><td data-i18n="compare.response">Response Time</td><td>48h</td><td>24h</td><td>&lt;4h</td></tr>
+            <tr><td data-i18n="compare.manager">Dedicated Account Manager</td><td>—</td><td>—</td><td>✓</td></tr>
+            <tr><td data-i18n="compare.emergency">On-call Emergency</td><td>—</td><td>—</td><td>✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">3301<span>dev</span></a>
+          <p data-i18n="footer.brand">Helping small and medium businesses find the right IT talent — fast, affordable, and reliable.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.pages">Pages</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.products">Products</a></li>
+            <li><a href="pricing.html" data-i18n="nav.pricing">Plans &amp; Pricing</a></li>
+            <li><a href="support.html" data-i18n="nav.support">Support</a></li>
+            <li><a href="try-free.html" data-i18n="nav.tryfree">Try Free</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.services">Services</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="footer.it">IT Specialists</a></li>
+            <li><a href="index.html" data-i18n="footer.dev">Developers</a></li>
+            <li><a href="index.html" data-i18n="footer.devops">DevOps</a></li>
+            <li><a href="index.html" data-i18n="footer.support">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul>
+            <li><a href="support.html" data-i18n="footer.gethelp">Get Help</a></li>
+            <li><a href="support.html" data-i18n="footer.aichat">AI Agent Chat</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">&copy; 2026 3301dev.com. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script>
+    // Mobile nav toggle
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+
+    // Billing period toggle
+    (function () {
+      var toggle = document.getElementById('toggleSwitch');
+      var labels = document.querySelectorAll('.toggle-label');
+      var prices = document.querySelectorAll('.pricing-price');
+      var monthlyLabels = document.querySelectorAll('.monthly-label');
+      var annualLabels = document.querySelectorAll('.annual-label');
+      var isAnnual = false;
+
+      toggle.addEventListener('click', function () {
+        isAnnual = !isAnnual;
+        toggle.classList.toggle('active', isAnnual);
+
+        labels.forEach(function (l) {
+          l.classList.toggle('active', isAnnual ? l.dataset.period === 'annual' : l.dataset.period === 'monthly');
+        });
+
+        prices.forEach(function (el) {
+          var price = isAnnual ? el.dataset.annual : el.dataset.monthly;
+          el.innerHTML = '$' + price + '<span>/mo</span>';
+        });
+
+        monthlyLabels.forEach(function (el) { el.style.display = isAnnual ? 'none' : ''; });
+        annualLabels.forEach(function (el) { el.style.display = isAnnual ? '' : 'none'; });
+      });
+    })();
+  </script>
+
+</body>
+</html>
