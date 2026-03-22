@@ -13,6 +13,14 @@
       "hero.subtitle": "Find skilled IT specialists, software developers, DevOps engineers, and support agents — matched to your needs, ready when you are.",
       "hero.cta.trial": "Start Free Trial",
       "hero.cta.plans": "View Plans",
+      "hiw.title": "How It Works",
+      "hiw.subtitle": "Three simple steps to get the right IT talent working on your project.",
+      "hiw.step1.title": "Describe Your Need",
+      "hiw.step1.desc": "Tell us what you need — a developer, DevOps engineer, IT specialist, or support agent. Use our AI chat to estimate scope instantly.",
+      "hiw.step2.title": "Get Matched",
+      "hiw.step2.desc": "We match you with the right specialist from our vetted pool. No lengthy HR processes — typically within 24 hours.",
+      "hiw.step3.title": "Start Working",
+      "hiw.step3.desc": "Your specialist gets to work immediately. Manage everything through your plan with full flexibility to scale up or down.",
       "services.title": "Our Services",
       "services.subtitle": "Everything your business needs to solve technical challenges — from quick fixes to long-term projects.",
       "service.it.title": "IT Specialists",
@@ -63,7 +71,7 @@
       "pricing.pro.billed.annual": "Billed annually",
       "pricing.pro.f1": "Everything in Basic",
       "pricing.pro.f2": "Dedicated software developers",
-      "pricing.pro.f3": "DevOps specialists",
+      "pricing.pro.f3": "DevOps specialists & IT specialists",
       "pricing.pro.f4": "Up to 20 tickets/month",
       "pricing.pro.f5": "Response within 24 hours",
       "pricing.pro.f6": "Telegram/Viber integration",
@@ -186,7 +194,22 @@
       "footer.it": "IT Specialists",
       "footer.dev": "Developers",
       "footer.devops": "DevOps",
-      "footer.support": "Support"
+      "footer.support": "Support",
+      "footer.privacy": "Privacy Policy",
+
+      /* -- Testimonials (additional) -- */
+      "trial.social.quote2": '"We had a critical bug in production on a Friday evening. The 3301dev support team jumped in within the hour and resolved it before Monday."',
+      "trial.social.author2": "— Maria K., COO at NovaTrade",
+      "trial.social.quote3": '"The AI scope estimation saved us hours of back-and-forth. We knew exactly what we needed and what it would cost before signing anything."',
+      "trial.social.author3": "— Daniel H., Founder at Loopify",
+
+      /* -- AI Chat responses -- */
+      "chat.response.cicd": "Based on your description, a CI/CD pipeline setup typically falls under our <strong>Professional plan ($100/mo)</strong>. Estimated scope: 8–16 hours of DevOps work. Want me to connect you with a specialist?",
+      "chat.response.web": "A custom website or web app project usually takes 20–60 hours depending on complexity. Our <strong>Professional</strong> or <strong>Premium</strong> plan would be a great fit. Shall I prepare a detailed estimate?",
+      "chat.response.security": "Security audits and vulnerability assessments are covered under our <strong>Premium plan ($250/mo)</strong>. Estimated scope: 12–30 hours with our IT specialists. Would you like to start a trial?",
+      "chat.response.api": "API development and system integrations typically require 15–40 hours of development work. Our <strong>Professional plan</strong> includes dedicated developers for this. Want to discuss specifics?",
+      "chat.response.support": "For ongoing support and help-desk services, our <strong>Basic plan ($25/mo)</strong> covers up to 5 tickets/month. Need more? Professional offers 20, and Premium is unlimited.",
+      "chat.response.default": "Thanks for sharing! Based on what you've described, I'd recommend starting with our <strong>Professional plan ($100/mo)</strong> for access to developers and DevOps specialists. You can <a href=\"try-free.html\">start a free trial</a> to evaluate the fit. Want more details on any specific service?"
     },
 
     ua: {
@@ -201,6 +224,14 @@
       "hero.subtitle": "Знайдіть кваліфікованих ІТ-спеціалістів, розробників, DevOps-інженерів та агентів підтримки — підібраних під ваші потреби.",
       "hero.cta.trial": "Безкоштовна пробна версія",
       "hero.cta.plans": "Переглянути тарифи",
+      "hiw.title": "Як це працює",
+      "hiw.subtitle": "Три прості кроки, щоб отримати потрібного ІТ-фахівця для вашого проєкту.",
+      "hiw.step1.title": "Опишіть потребу",
+      "hiw.step1.desc": "Розкажіть, що вам потрібно — розробник, DevOps-інженер, ІТ-спеціаліст або агент підтримки. Скористайтеся ШІ-чатом для миттєвої оцінки.",
+      "hiw.step2.title": "Знайдіть відповідного фахівця",
+      "hiw.step2.desc": "Ми підбираємо потрібного спеціаліста з нашого перевіреного пулу. Без довгих HR-процесів — як правило, протягом 24 годин.",
+      "hiw.step3.title": "Починайте роботу",
+      "hiw.step3.desc": "Фахівець приступає до роботи одразу. Керуйте всім через ваш тариф з повною гнучкістю для збільшення або зменшення обсягу.",
       "services.title": "Наші послуги",
       "services.subtitle": "Все, що потрібно вашому бізнесу для вирішення технічних завдань — від швидких виправлень до довгострокових проєктів.",
       "service.it.title": "ІТ-спеціалісти",
@@ -251,7 +282,7 @@
       "pricing.pro.billed.annual": "Щорічна оплата",
       "pricing.pro.f1": "Все з Базового",
       "pricing.pro.f2": "Виділені розробники ПЗ",
-      "pricing.pro.f3": "DevOps-спеціалісти",
+      "pricing.pro.f3": "DevOps-спеціалісти та ІТ-спеціалісти",
       "pricing.pro.f4": "До 20 запитів/місяць",
       "pricing.pro.f5": "Відповідь протягом 24 годин",
       "pricing.pro.f6": "Інтеграція Telegram/Viber",
@@ -374,7 +405,22 @@
       "footer.it": "ІТ-спеціалісти",
       "footer.dev": "Розробники",
       "footer.devops": "DevOps",
-      "footer.support": "Підтримка"
+      "footer.support": "Підтримка",
+      "footer.privacy": "Політика конфіденційності",
+
+      /* -- Testimonials (additional) -- */
+      "trial.social.quote2": "«У нас був критичний баг у production в п'ятницю ввечері. Команда підтримки 3301dev підключилася протягом години й вирішила проблему до понеділка.»",
+      "trial.social.author2": "— Марія К., COO в NovaTrade",
+      "trial.social.quote3": "«Оцінка обсягу від ШІ заощадила нам години узгоджень. Ми точно знали, що потрібно і скільки це коштуватиме, ще до підписання договору.»",
+      "trial.social.author3": "— Даніель Г., засновник Loopify",
+
+      /* -- AI Chat responses (UA) -- */
+      "chat.response.cicd": "Судячи з опису, налаштування CI/CD конвеєру зазвичай відповідає нашому <strong>Професійному плану ($100/міс)</strong>. Орієнтовний обсяг: 8–16 годин DevOps-роботи. Бажаєте, щоб я з'єднав вас зі спеціалістом?",
+      "chat.response.web": "Кастомний сайт або веб-додаток зазвичай займає 20–60 годин залежно від складності. Наш <strong>Професійний</strong> або <strong>Преміум</strong> план підійде ідеально. Підготувати детальну оцінку?",
+      "chat.response.security": "Аудит безпеки та оцінка вразливостей входять до <strong>Преміум плану ($250/міс)</strong>. Орієнтовний обсяг: 12–30 годин з нашими ІТ-спеціалістами. Хочете розпочати пробний період?",
+      "chat.response.api": "Розробка API та системні інтеграції зазвичай потребують 15–40 годин роботи. Наш <strong>Професійний план</strong> включає виділених розробників саме для цього. Обговоримо деталі?",
+      "chat.response.support": "Для постійної підтримки та служби довідки наш <strong>Базовий план ($25/міс)</strong> покриває до 5 запитів/місяць. Потрібно більше? Професійний — 20, Преміум — необмежено.",
+      "chat.response.default": "Дякую за інформацію! Судячи з опису, рекомендую розпочати з <strong>Професійного плану ($100/міс)</strong> — він дає доступ до розробників і DevOps-спеціалістів. Ви можете <a href=\"try-free.html\">розпочати безкоштовно</a>, щоб оцінити відповідність. Потрібні деталі по конкретній послузі?"
     }
   };
 

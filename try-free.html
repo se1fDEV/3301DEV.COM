@@ -4,10 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3301dev.com — Start your free 14-day trial. No credit card required.">
+  <meta property="og:title" content="Try Free — 3301dev.com">
+  <meta property="og:description" content="Start your free 14-day trial of 3301dev. Access IT specialists, developers, DevOps engineers, and AI agents. No credit card required.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://3301dev.com/try-free.html">
+  <meta property="og:image" content="https://3301dev.com/images/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Try Free — 3301dev.com">
+  <meta name="twitter:description" content="Start your free 14-day trial of 3301dev. Access IT specialists, developers, DevOps engineers, and AI agents. No credit card required.">
+  <meta name="twitter:image" content="https://3301dev.com/images/og-image.svg">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://3301dev.com/try-free.html">
+  <link rel="alternate" hreflang="en" href="https://3301dev.com/try-free.html">
+  <link rel="alternate" hreflang="uk" href="https://3301dev.com/try-free.html">
+  <link rel="alternate" hreflang="x-default" href="https://3301dev.com/try-free.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="css/styles.css" as="style">
   <title>Try Free — 3301dev.com</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://3301dev.com/try-free.html",
+    "name": "Try Free — 3301dev.com",
+    "description": "Start your free 14-day trial of 3301dev. Access IT specialists, developers, DevOps engineers, and AI agents. No credit card required.",
+    "potentialAction": {
+      "@type": "RegisterAction",
+      "target": "https://3301dev.com/try-free.html",
+      "name": "Start Free Trial"
+    }
+  }
+  </script>
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <noscript><div style="background:#c62828;color:#fff;text-align:center;padding:10px 16px;font-size:0.88rem;">JavaScript is required for language switching and interactive features. Please enable it for the best experience.</div></noscript>
 
   <!-- Header -->
   <header class="site-header">
@@ -20,11 +55,13 @@
           <li><a href="pricing.html" data-i18n="nav.pricing">Plans &amp; Pricing</a></li>
           <li><a href="support.html" data-i18n="nav.support">Support</a></li>
           <li class="lang-switcher"><button class="lang-btn active" data-lang="en">EN</button><button class="lang-btn" data-lang="ua">UA</button></li>
-          <li><a href="try-free.html" class="btn-nav active" data-i18n="nav.tryfree">Try Free</a></li>
+          <li><a href="try-free.html" class="btn-nav active" aria-current="page" data-i18n="nav.tryfree">Try Free</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <main id="main-content">
 
   <!-- Trial Hero + Form -->
   <section class="trial-hero">
@@ -37,15 +74,15 @@
         <form id="trialForm" novalidate>
           <div class="form-group">
             <label for="fullName" data-i18n="trial.form.name">Full Name</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Jane Smith" data-i18n-ph="trial.form.name.ph" required>
+            <input type="text" id="fullName" name="fullName" placeholder="Jane Smith" data-i18n-ph="trial.form.name.ph" required aria-required="true" aria-describedby="trialError" autocomplete="name">
           </div>
           <div class="form-group">
             <label for="workEmail" data-i18n="trial.form.email">Work Email</label>
-            <input type="email" id="workEmail" name="workEmail" placeholder="jane@company.com" data-i18n-ph="trial.form.email.ph" required>
+            <input type="email" id="workEmail" name="workEmail" placeholder="jane@company.com" data-i18n-ph="trial.form.email.ph" required aria-required="true" aria-describedby="trialError" autocomplete="email" inputmode="email">
           </div>
           <div class="form-group">
             <label for="company" data-i18n="trial.form.company">Company Name</label>
-            <input type="text" id="company" name="company" placeholder="Acme Inc." data-i18n-ph="trial.form.company.ph">
+            <input type="text" id="company" name="company" placeholder="Acme Inc." data-i18n-ph="trial.form.company.ph" autocomplete="organization">
           </div>
           <div class="form-group">
             <label for="teamSize" data-i18n="trial.form.teamsize">Team Size</label>
@@ -57,9 +94,9 @@
               <option value="51+" data-i18n="trial.form.ts.4">51+ people</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="trial.form.submit">Start Free Trial</button>
-          <p id="trialSuccess" style="display:none;color:var(--color-primary);text-align:center;margin-top:16px;font-weight:600;" data-i18n="trial.form.success">You're in! Check your email to get started.</p>
-          <p id="trialError" style="display:none;color:#d32f2f;text-align:center;margin-top:16px;font-weight:600;"></p>
+          <button type="submit" class="btn btn-primary btn-full" data-i18n="trial.form.submit">Start Free Trial</button>
+          <p id="trialSuccess" class="form-message form-success" role="status" aria-live="polite" style="text-align:center;" data-i18n="trial.form.success">You're in! Check your email to get started.</p>
+          <p id="trialError" class="form-message form-error" role="alert" aria-live="assertive" style="text-align:center;"></p>
         </form>
         <p style="text-align:center;font-size:0.85rem;color:var(--color-text-light);margin-top:16px;" data-i18n="trial.form.note">No credit card required. Cancel anytime.</p>
       </div>
@@ -103,14 +140,37 @@
 
   <!-- Testimonial / Social Proof -->
   <section class="section section-alt">
-    <div class="container" style="text-align:center;max-width:680px;">
+    <div class="container" style="text-align:center;max-width:780px;">
       <h2 class="section-title" data-i18n="trial.social.title">Trusted by Growing Businesses</h2>
-      <blockquote style="font-size:1.15rem;font-style:italic;color:var(--color-text-light);margin:32px 0 16px;line-height:1.7;" data-i18n="trial.social.quote">
-        "3301dev connected us with a DevOps engineer who set up our CI/CD pipeline in a week. We couldn't have done it without them."
-      </blockquote>
-      <p style="font-weight:600;" data-i18n="trial.social.author">— Alex R., CTO at Streamline Labs</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;margin-top:40px;">
+
+        <div style="background:var(--color-bg-elevated);border:1px solid var(--color-border);border-radius:var(--radius);padding:28px 24px;">
+          <blockquote style="font-size:1rem;font-style:italic;color:var(--color-text-light);margin:0 0 16px;line-height:1.7;" data-i18n="trial.social.quote">
+            "3301dev connected us with a DevOps engineer who set up our CI/CD pipeline in a week. We couldn't have done it without them."
+          </blockquote>
+          <p style="font-weight:600;font-size:0.9rem;" data-i18n="trial.social.author">— Alex R., CTO at Streamline Labs</p>
+        </div>
+
+        <div style="background:var(--color-bg-elevated);border:1px solid var(--color-border);border-radius:var(--radius);padding:28px 24px;">
+          <blockquote style="font-size:1rem;font-style:italic;color:var(--color-text-light);margin:0 0 16px;line-height:1.7;" data-i18n="trial.social.quote2">
+            "We had a critical bug in production on a Friday evening. The 3301dev support team jumped in within the hour and resolved it before Monday."
+          </blockquote>
+          <p style="font-weight:600;font-size:0.9rem;" data-i18n="trial.social.author2">— Maria K., COO at NovaTrade</p>
+        </div>
+
+        <div style="background:var(--color-bg-elevated);border:1px solid var(--color-border);border-radius:var(--radius);padding:28px 24px;">
+          <blockquote style="font-size:1rem;font-style:italic;color:var(--color-text-light);margin:0 0 16px;line-height:1.7;" data-i18n="trial.social.quote3">
+            "The AI scope estimation saved us hours of back-and-forth. We knew exactly what we needed and what it would cost before signing anything."
+          </blockquote>
+          <p style="font-weight:600;font-size:0.9rem;" data-i18n="trial.social.author3">— Daniel H., Founder at Loopify</p>
+        </div>
+
+      </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -119,6 +179,14 @@
         <div class="footer-brand">
           <a href="index.html" class="logo">3301<span>dev</span></a>
           <p data-i18n="footer.brand">Helping small and medium businesses find the right IT talent — fast, affordable, and reliable.</p>
+          <div class="footer-social">
+            <a href="mailto:alex@3301dev.com" aria-label="Email us">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+            </a>
+            <a href="https://t.me/a3301dev_com" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.2 4.4L2.4 10.8c-.6.2-.6 1.1 0 1.3l4.5 1.7 1.7 5.5c.1.4.6.6.9.3l2.5-2.1 4.4 3.3c.4.3 1 .1 1.1-.4L21.8 5.2c.2-.6-.3-1-.6-.8z"/><path d="M8.6 13.8l8.4-6.2"/></svg>
+            </a>
+          </div>
         </div>
         <div>
           <h4 data-i18n="footer.pages">Pages</h4>
@@ -132,10 +200,10 @@
         <div>
           <h4 data-i18n="footer.services">Services</h4>
           <ul>
-            <li><a href="index.html" data-i18n="footer.it">IT Specialists</a></li>
-            <li><a href="index.html" data-i18n="footer.dev">Developers</a></li>
-            <li><a href="index.html" data-i18n="footer.devops">DevOps</a></li>
-            <li><a href="index.html" data-i18n="footer.support">Support</a></li>
+            <li><a href="index.html#services" data-i18n="footer.it">IT Specialists</a></li>
+            <li><a href="index.html#services" data-i18n="footer.dev">Developers</a></li>
+            <li><a href="index.html#services" data-i18n="footer.devops">DevOps</a></li>
+            <li><a href="index.html#services" data-i18n="footer.support">Support</a></li>
           </ul>
         </div>
         <div>
@@ -148,48 +216,18 @@
       </div>
       <div class="footer-bottom">
         <p data-i18n="footer.copy">&copy; 2026 3301dev.com. All rights reserved.</p>
+        <a href="privacy.html" data-i18n="footer.privacy" class="footer-privacy-link">Privacy Policy</a>
       </div>
     </div>
   </footer>
 
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
   <script src="js/i18n.js"></script>
-  <script>
-    // Mobile nav toggle
-    document.querySelector('.nav-toggle').addEventListener('click', function () {
-      document.getElementById('mainNav').classList.toggle('open');
-    });
-
-    // Trial form validation
-    (function () {
-      var form = document.getElementById('trialForm');
-      var successMsg = document.getElementById('trialSuccess');
-      var errorMsg = document.getElementById('trialError');
-
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        successMsg.style.display = 'none';
-        errorMsg.style.display = 'none';
-
-        var name = form.fullName.value.trim();
-        var email = form.workEmail.value.trim();
-
-        if (!name || !email) {
-          errorMsg.textContent = window.i18n.t('trial.form.error.required');
-          errorMsg.style.display = 'block';
-          return;
-        }
-
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-          errorMsg.textContent = window.i18n.t('trial.form.error.email');
-          errorMsg.style.display = 'block';
-          return;
-        }
-
-        successMsg.style.display = 'block';
-        form.reset();
-      });
-    })();
-  </script>
+  <script src="js/utils.js"></script>
+  <script src="js/trial.js"></script>
 
 </body>
 </html>

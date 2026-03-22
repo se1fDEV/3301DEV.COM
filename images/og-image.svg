@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#121212"/>
+  <!-- Green left accent bar -->
+  <rect x="0" y="0" width="6" height="630" fill="#10B981"/>
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1E1E1E" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.6"/>
+  <!-- Decorative circle -->
+  <circle cx="980" cy="315" r="260" fill="none" stroke="#10B981" stroke-width="1.5" opacity="0.15"/>
+  <circle cx="980" cy="315" r="180" fill="none" stroke="#10B981" stroke-width="1" opacity="0.10"/>
+  <circle cx="980" cy="315" r="100" fill="none" stroke="#10B981" stroke-width="1" opacity="0.08"/>
+  <!-- Terminal prompt decoration -->
+  <text x="980" y="295" font-family="'Courier New', Courier, monospace" font-size="52" fill="#10B981" opacity="0.25" text-anchor="middle">&gt;_</text>
+  <!-- Logo: 3301 -->
+  <text x="80" y="195" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="96" fill="#10B981">3301</text>
+  <!-- Logo: dev -->
+  <text x="86" y="268" font-family="'Segoe UI', Arial, sans-serif" font-weight="300" font-size="60" fill="#cccccc" letter-spacing="6">dev</text>
+  <!-- Divider -->
+  <rect x="80" y="296" width="480" height="2" fill="#333333"/>
+  <!-- Tagline -->
+  <text x="80" y="352" font-family="'Segoe UI', Arial, sans-serif" font-weight="600" font-size="34" fill="#E8E8E8">IT Expertise On Demand</text>
+  <text x="80" y="396" font-family="'Segoe UI', Arial, sans-serif" font-weight="400" font-size="24" fill="#A0A0A0">for Your Business</text>
+  <!-- Service pills -->
+  <rect x="80" y="436" width="134" height="38" rx="19" fill="#1E1E1E" stroke="#333" stroke-width="1"/>
+  <text x="147" y="461" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#34D399" text-anchor="middle">IT Specialists</text>
+  <rect x="228" y="436" width="122" height="38" rx="19" fill="#1E1E1E" stroke="#333" stroke-width="1"/>
+  <text x="289" y="461" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#34D399" text-anchor="middle">Developers</text>
+  <rect x="364" y="436" width="90" height="38" rx="19" fill="#1E1E1E" stroke="#333" stroke-width="1"/>
+  <text x="409" y="461" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#34D399" text-anchor="middle">DevOps</text>
+  <rect x="468" y="436" width="100" height="38" rx="19" fill="#1E1E1E" stroke="#333" stroke-width="1"/>
+  <text x="518" y="461" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#34D399" text-anchor="middle">Support</text>
+  <!-- CTA button -->
+  <rect x="80" y="504" width="240" height="56" rx="8" fill="#10B981"/>
+  <text x="200" y="539" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="22" fill="white" text-anchor="middle">Start Free Trial</text>
+  <!-- Domain -->
+  <text x="80" y="604" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#555555">3301dev.com</text>
+</svg>

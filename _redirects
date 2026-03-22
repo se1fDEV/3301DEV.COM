@@ -1,0 +1,14 @@
+# Redirect www to non-www (configure in Cloudflare dashboard DNS too)
+https://www.3301dev.com/* https://3301dev.com/:splat 301
+
+# Friendly redirect for /privacy → /privacy.html
+/privacy /privacy.html 301
+
+# Friendly redirect for /pricing → /pricing.html
+/pricing /pricing.html 301
+
+# Friendly redirect for /support → /support.html
+/support /support.html 301
+
+# Friendly redirect for /try-free → /try-free.html
+/try-free /try-free.html 301

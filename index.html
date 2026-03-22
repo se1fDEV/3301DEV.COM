@@ -4,10 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3301dev.com — Find IT specialists, software developers, DevOps engineers, and support agents for your business.">
+  <meta property="og:title" content="Products — 3301dev.com">
+  <meta property="og:description" content="Find skilled IT specialists, software developers, DevOps engineers, and support agents — matched to your needs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://3301dev.com/">
+  <meta property="og:image" content="https://3301dev.com/images/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Products — 3301dev.com">
+  <meta name="twitter:description" content="Find skilled IT specialists, software developers, DevOps engineers, and support agents — matched to your needs.">
+  <meta name="twitter:image" content="https://3301dev.com/images/og-image.svg">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://3301dev.com/">
+  <link rel="alternate" hreflang="en" href="https://3301dev.com/">
+  <link rel="alternate" hreflang="uk" href="https://3301dev.com/">
+  <link rel="alternate" hreflang="x-default" href="https://3301dev.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="css/styles.css" as="style">
   <title>Products — 3301dev.com</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://3301dev.com/",
+        "url": "https://3301dev.com/",
+        "name": "Products — 3301dev.com",
+        "description": "Find IT specialists, software developers, DevOps engineers, and support agents for your business."
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://3301dev.com/#organization",
+        "name": "3301dev",
+        "url": "https://3301dev.com",
+        "logo": "https://3301dev.com/favicon.svg",
+        "description": "Helping small and medium businesses find the right IT talent — fast, affordable, and reliable.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "alex@3301dev.com",
+          "contactType": "customer support",
+          "availableLanguage": ["English", "Ukrainian"]
+        },
+        "sameAs": ["https://t.me/a3301dev_com"]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <noscript><div style="background:#c62828;color:#fff;text-align:center;padding:10px 16px;font-size:0.88rem;">JavaScript is required for language switching and interactive features. Please enable it for the best experience.</div></noscript>
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
   <!-- Header -->
   <header class="site-header">
@@ -16,7 +66,7 @@
       <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
       <nav class="main-nav" id="mainNav">
         <ul>
-          <li><a href="index.html" class="active" data-i18n="nav.products">Products</a></li>
+          <li><a href="index.html" class="active" aria-current="page" data-i18n="nav.products">Products</a></li>
           <li><a href="pricing.html" data-i18n="nav.pricing">Plans &amp; Pricing</a></li>
           <li><a href="support.html" data-i18n="nav.support">Support</a></li>
           <li class="lang-switcher"><button class="lang-btn active" data-lang="en">EN</button><button class="lang-btn" data-lang="ua">UA</button></li>
@@ -25,6 +75,8 @@
       </nav>
     </div>
   </header>
+
+  <main id="main-content">
 
   <!-- Hero -->
   <section class="hero">
@@ -38,8 +90,37 @@
     </div>
   </section>
 
+  <!-- How It Works -->
+  <section id="how-it-works" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="hiw.title">How It Works</h2>
+      <p class="section-subtitle" data-i18n="hiw.subtitle">From first contact to delivered results — in three simple steps.</p>
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3 data-i18n="hiw.step1.title">Describe Your Needs</h3>
+          <p data-i18n="hiw.step1.desc">Fill in the contact form or chat with our AI agent — describe the problem, project, or service you need.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3 data-i18n="hiw.step2.title">Get Matched</h3>
+          <p data-i18n="hiw.step2.desc">We match you with the right specialist — IT, DevOps, developer, or support agent — based on your plan and needs.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3 data-i18n="hiw.step3.title">Work Gets Done</h3>
+          <p data-i18n="hiw.step3.desc">Your specialist gets to work. Track progress, communicate directly, and get results — fast and reliably.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Services -->
-  <section class="section section-alt">
+  <section id="services" class="section section-alt">
     <div class="container">
       <h2 class="section-title" data-i18n="services.title">Our Services</h2>
       <p class="section-subtitle" data-i18n="services.subtitle">Everything your business needs to solve technical challenges — from quick fixes to long-term projects.</p>
@@ -74,7 +155,7 @@
   </section>
 
   <!-- Teams -->
-  <section class="section">
+  <section id="teams" class="section">
     <div class="container">
       <h2 class="section-title" data-i18n="teams.title">Our Teams</h2>
       <p class="section-subtitle" data-i18n="teams.subtitle">Two types of experts working together to deliver fast, reliable results.</p>
@@ -115,6 +196,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
@@ -122,6 +205,14 @@
         <div class="footer-brand">
           <a href="index.html" class="logo">3301<span>dev</span></a>
           <p data-i18n="footer.brand">Helping small and medium businesses find the right IT talent — fast, affordable, and reliable.</p>
+          <div class="footer-social">
+            <a href="mailto:alex@3301dev.com" aria-label="Email us">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+            </a>
+            <a href="https://t.me/a3301dev_com" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.2 4.4L2.4 10.8c-.6.2-.6 1.1 0 1.3l4.5 1.7 1.7 5.5c.1.4.6.6.9.3l2.5-2.1 4.4 3.3c.4.3 1 .1 1.1-.4L21.8 5.2c.2-.6-.3-1-.6-.8z"/><path d="M8.6 13.8l8.4-6.2"/></svg>
+            </a>
+          </div>
         </div>
         <div>
           <h4 data-i18n="footer.pages">Pages</h4>
@@ -135,10 +226,10 @@
         <div>
           <h4 data-i18n="footer.services">Services</h4>
           <ul>
-            <li><a href="index.html" data-i18n="footer.it">IT Specialists</a></li>
-            <li><a href="index.html" data-i18n="footer.dev">Developers</a></li>
-            <li><a href="index.html" data-i18n="footer.devops">DevOps</a></li>
-            <li><a href="index.html" data-i18n="footer.support">Support</a></li>
+            <li><a href="index.html#services" data-i18n="footer.it">IT Specialists</a></li>
+            <li><a href="index.html#services" data-i18n="footer.dev">Developers</a></li>
+            <li><a href="index.html#services" data-i18n="footer.devops">DevOps</a></li>
+            <li><a href="index.html#services" data-i18n="footer.support">Support</a></li>
           </ul>
         </div>
         <div>
@@ -151,16 +242,17 @@
       </div>
       <div class="footer-bottom">
         <p data-i18n="footer.copy">&copy; 2026 3301dev.com. All rights reserved.</p>
+        <a href="privacy.html" data-i18n="footer.privacy" class="footer-privacy-link">Privacy Policy</a>
       </div>
     </div>
   </footer>
 
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
   <script src="js/i18n.js"></script>
-  <script>
-    document.querySelector('.nav-toggle').addEventListener('click', function () {
-      document.getElementById('mainNav').classList.toggle('open');
-    });
-  </script>
+  <script src="js/utils.js"></script>
 
 </body>
 </html>
