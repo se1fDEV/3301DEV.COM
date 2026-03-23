@@ -1,9 +1,9 @@
 /* ===== CSS Variables ===== */
 :root {
-  --color-primary: #10B981;
-  --color-primary-dark: #059669;
-  --color-accent: #34D399;
-  --color-accent-light: rgba(16, 185, 129, 0.15);
+  --color-primary: #43A047;
+  --color-primary-dark: #2E7D32;
+  --color-accent: #66BB6A;
+  --color-accent-light: rgba(67, 160, 71, 0.15);
   --color-bg: #121212;
   --color-bg-surface: #1E1E1E;
   --color-bg-elevated: #252525;
