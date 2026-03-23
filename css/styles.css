@@ -375,6 +375,33 @@ section[id] {
 }
 
 
+/* ===== Platform Intro ===== */
+.platform-intro {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.platform-intro h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+
+.platform-intro p {
+  font-size: 1.05rem;
+  color: var(--color-text-light);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.platform-intro p:last-child {
+  margin-bottom: 0;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
 /* ===== Pricing Cards ===== */
 .pricing-cards {
   display: grid;
