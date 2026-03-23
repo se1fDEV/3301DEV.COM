@@ -54,6 +54,8 @@ css/
   styles.css            # All styles, CSS variables, responsive breakpoints
 js/
   i18n.js               # EN/UA translation engine
+docs/
+  ADR.md                # Architecture Decision Records (11 ADRs)
 jest.config.js          # Jest configuration
 package.json            # npm scripts (test)
 __tests__/

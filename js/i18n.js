@@ -10,7 +10,7 @@
 
       /* -- Index / Products -- */
       "hero.title": 'IT Expertise <span class="highlight">On Demand</span> for Your Business',
-      "hero.subtitle": "Find skilled IT specialists, software developers, DevOps engineers, and support agents — matched to your needs, ready when you are.",
+      "hero.subtitle": "3301dev Platform is a modern automated SaaS platform powered by a multi-agent AI system, purpose-built for small and medium businesses (SMBs).<br><br>Our core mission — handle 80–90% of routine daily tasks fully autonomously, with no human involvement, and only escalate complex or critical issues to specialists with a pre-estimated cost and timeline.",
       "hero.cta.trial": "Start Free Trial",
       "hero.cta.plans": "View Plans",
       "platform.title": "IT Expertise On Demand for Your Business",
@@ -233,7 +233,7 @@
 
       /* -- Index / Products -- */
       "hero.title": 'ІТ-експертиза <span class="highlight">на вимогу</span> для вашого бізнесу',
-      "hero.subtitle": "Знайдіть кваліфікованих ІТ-спеціалістів, розробників, DevOps-інженерів та агентів підтримки — підібраних під ваші потреби.",
+      "hero.subtitle": "3301dev Platform — це сучасна автоматизована SaaS-платформа на базі мультиагентної системи штучного інтелекту, спеціально створена для малого та середнього бізнесу (МСБ).<br><br>Головна мета — закривати 80–90 % дрібних щоденних завдань повністю автономно, без участі людини, і лише складні або критичні задачі передавати спеціалістам з попередньою оцінкою вартості та терміну.",
       "hero.cta.trial": "Безкоштовна пробна версія",
       "hero.cta.plans": "Переглянути тарифи",
       "platform.title": "ІТ-експертиза на вимогу для вашого бізнесу",
