@@ -124,45 +124,56 @@
     <div class="container">
       <h2 class="section-title" data-i18n="services.title">Our Services</h2>
       <p class="section-subtitle" data-i18n="services.subtitle">Everything your business needs to solve technical challenges — from quick fixes to long-term projects.</p>
-      <div class="services-carousel" id="servicesCarousel">
-        <div class="cards" id="servicesTrack">
+      <div class="cards">
 
-          <div class="card">
-            <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-            <h3 data-i18n="service.it.title">IT Specialists</h3>
-            <p data-i18n="service.it.desc">Infrastructure setup, network configuration, system administration, and troubleshooting for your office or cloud environment.</p>
-          </div>
-
-          <div class="card">
-            <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-            <h3 data-i18n="service.dev.title">Software Developers</h3>
-            <p data-i18n="service.dev.desc">Full-stack development, custom applications, API integrations, and modernization of legacy systems.</p>
-          </div>
-
-          <div class="card">
-            <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-            <h3 data-i18n="service.security.title">Security Audit</h3>
-            <p data-i18n="service.security.desc">Vulnerability assessments, penetration testing, security hardening, and compliance reviews — to protect your infrastructure and data from modern threats.</p>
-          </div>
-
-          <div class="card">
-            <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
-            <h3 data-i18n="service.devops.title">DevOps Engineers</h3>
-            <p data-i18n="service.devops.desc">CI/CD pipelines, cloud infrastructure, containerization, monitoring, and deployment automation.</p>
-          </div>
-
-          <div class="card">
-            <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0z"/></svg></div>
-            <h3 data-i18n="service.support.title">Support Agents</h3>
-            <p data-i18n="service.support.desc">Responsive technical support, incident management, and help-desk services — human and AI-powered.</p>
-          </div>
-
+        <div class="card">
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3 data-i18n="service.it.title">IT Specialists</h3>
+          <p data-i18n="service.it.desc">Infrastructure setup, network configuration, system administration, and troubleshooting for your office or cloud environment.</p>
         </div>
-        <div class="carousel-controls">
-          <button class="carousel-btn" id="servicesPrev" aria-label="Previous service">&#8592;</button>
-          <div class="carousel-dots" id="servicesDots" role="tablist"></div>
-          <button class="carousel-btn" id="servicesNext" aria-label="Next service">&#8594;</button>
+
+        <div class="card">
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h3 data-i18n="service.dev.title">Software Developers</h3>
+          <p data-i18n="service.dev.desc">Full-stack development, custom applications, API integrations, and modernization of legacy systems.</p>
         </div>
+
+        <div class="card">
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+          <h3 data-i18n="service.devops.title">DevOps Engineers</h3>
+          <p data-i18n="service.devops.desc">CI/CD pipelines, cloud infrastructure, containerization, monitoring, deployment automation, and DevSecOps practices to build security into every stage of delivery.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3 data-i18n="service.security.title">Security Audit</h3>
+          <p data-i18n="service.security.desc">Vulnerability assessments, penetration testing, security hardening, and compliance reviews — to protect your infrastructure and data from modern threats.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3 data-i18n="service.automation.title">Process Automation</h3>
+          <p data-i18n="service.automation.desc">Workflow automation with ClickUp, Zapier, Make, and n8n — connect your tools, eliminate manual tasks, and streamline business operations.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+          <h3 data-i18n="service.seo.title">SEO &amp; Performance</h3>
+          <p data-i18n="service.seo.desc">Technical SEO audits, Core Web Vitals optimization, analytics setup, and search visibility improvements to grow your organic traffic.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5V11h2a2 2 0 0 1 2 2v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1v-1a2 2 0 0 1 2-2h2V9.5C8.8 8.8 8 7.5 8 6a4 4 0 0 1 4-4z"/></svg></div>
+          <h3 data-i18n="service.ai.title">AI Integration</h3>
+          <p data-i18n="service.ai.desc">Custom AI agents, ChatGPT and LLM integrations, intelligent automation, and AI-powered tools tailored to your business workflows.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0z"/></svg></div>
+          <h3 data-i18n="service.support.title">Support Agents</h3>
+          <p data-i18n="service.support.desc">Responsive technical support, incident management, and help-desk services — human and AI-powered.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -267,65 +278,6 @@
 
   <script src="js/i18n.js"></script>
   <script src="js/utils.js"></script>
-  <script>
-    (function () {
-      var track = document.getElementById('servicesTrack');
-      var prevBtn = document.getElementById('servicesPrev');
-      var nextBtn = document.getElementById('servicesNext');
-      var dotsEl = document.getElementById('servicesDots');
-      if (!track) return;
-
-      var cards = Array.from(track.querySelectorAll('.card'));
-      var current = 0;
-      var dots = [];
-
-      cards.forEach(function (_, i) {
-        var d = document.createElement('button');
-        d.className = 'carousel-dot';
-        d.setAttribute('role', 'tab');
-        d.setAttribute('aria-label', 'Slide ' + (i + 1));
-        d.addEventListener('click', function () { goTo(i); });
-        dotsEl.appendChild(d);
-        dots.push(d);
-      });
-
-      function cardStep() {
-        return cards[0].offsetWidth + 24;
-      }
-
-      function visible() {
-        return Math.max(1, Math.round(track.parentElement.offsetWidth / cardStep()));
-      }
-
-      function maxIdx() {
-        return Math.max(0, cards.length - visible());
-      }
-
-      function goTo(idx) {
-        current = Math.max(0, Math.min(idx, maxIdx()));
-        track.style.transform = 'translateX(-' + current * cardStep() + 'px)';
-        dots.forEach(function (d, i) { d.classList.toggle('active', i === current); });
-        prevBtn.disabled = current === 0;
-        nextBtn.disabled = current >= maxIdx();
-      }
-
-      prevBtn.addEventListener('click', function () { goTo(current - 1); });
-      nextBtn.addEventListener('click', function () { goTo(current + 1); });
-
-      var touchStartX = 0;
-      track.addEventListener('touchstart', function (e) {
-        touchStartX = e.touches[0].clientX;
-      }, { passive: true });
-      track.addEventListener('touchend', function (e) {
-        var dx = touchStartX - e.changedTouches[0].clientX;
-        if (Math.abs(dx) > 50) goTo(current + (dx > 0 ? 1 : -1));
-      }, { passive: true });
-
-      window.addEventListener('resize', function () { goTo(current); });
-
-      goTo(0);
-    })();
-  </script>
 
 </body>
 </html>
