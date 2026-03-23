@@ -25,6 +25,17 @@ Repo: `github.com/ur3vau/3301DEV` · PRD: `PRD.md` (v1.1, Implemented)
 - 240 tests across 6 suites, all passing
 - See `__tests__/helpers.js` for shared utilities (`readPageHTML`, `readI18nSource`, `ALL_PAGES`)
 
+## Git & PR Workflow
+
+- **Remotes:** `origin` → `ur3vau/3301DEV` (master) · `se1fdev` → `se1fDEV/3301DEV.COM` (main)
+- **Direct push** to `origin master` — no PR required
+- **PR workflow** for `se1fDEV/3301DEV.COM`:
+  1. Create a feature branch from `master`: `git checkout -b <branch-name>`
+  2. Push to se1fdev remote: `git push se1fdev <branch-name>`
+  3. Open PR via CLI: `gh pr create --repo se1fDEV/3301DEV.COM --base main --head <branch-name> --title "..." --body "..."`
+  4. After merge, clean up: `git checkout master && git branch -d <branch-name>`
+- Always push to **both remotes** after work is complete
+
 ## Memory Bank
 
 **Location:** `.memory-bank/project.md` (git-tracked)
